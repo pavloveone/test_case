@@ -12,11 +12,11 @@ async function Game({ params }: { params: { slug: string[] } }) {
         href="/games"
         className="text-blue-500 hover:text-blue-700 mb-4 block"
       >
-        ← Home
+        ← Back
       </Link>
       {game && (
         <div className="flex">
-          <div className="w-72 bg-purple-200 p-4 flex flex-col items-center justify-center rounded-lg mr-6">
+          <div className="w-72 bg-purple-100 p-4 flex flex-col items-center justify-center rounded-lg mr-6">
             <Image
               src={`https://d2norla3tyc4cn.cloudfront.net/i/s3/${game.identifier}.webp`}
               alt={game.title}
@@ -25,7 +25,9 @@ async function Game({ params }: { params: { slug: string[] } }) {
             />
           </div>
           <div className="flex flex-col">
-            <h1 className="text-3xl font-bold mb-2">{game.title}</h1>
+            <h1 className="text-blue-600 text-3xl font-bold mb-2">
+              {game.title}
+            </h1>
             <p className="text-lg mb-2">Provider: {game.provider}</p>
             <p className="text-lg mb-4">Categories:</p>
             <div className="flex flex-wrap">
