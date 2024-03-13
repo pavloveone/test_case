@@ -22,4 +22,5 @@ const moveZeros = array => {
   return array;
 };
 ```
+### Задача 2. [Ссылка](https://task2-two-psi.vercel.app/)
 ### Задача 3. [Ссылка](https://task3-blue-theta.vercel.app/)
