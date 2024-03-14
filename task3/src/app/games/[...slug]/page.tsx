@@ -7,7 +7,7 @@ async function Game({ params }: { params: { slug: string[] } }) {
   const games: TGames[] = await GamesServices.getAll();
   const game = games.find((game) => game.seo_title === params.slug.at(-1));
   return (
-    <div className="max-w-3xl mx-auto p-4">
+    <div className="max-w-3xl mx-auto h-screen p-4">
       <Link
         href="/games"
         className="text-blue-500 hover:text-blue-700 mb-4 block"
